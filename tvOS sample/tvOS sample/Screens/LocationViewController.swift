@@ -37,8 +37,15 @@ class LocationViewController: UIViewController {
         
         view.backgroundColor = .clear
         view.layer.insertSublayer(avPlayerLayer, at: 0)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(playerItemDidReachEnd(notification:)), name: AVPlayerItem.didPlayToEndTimeNotification, object: avPlayer.currentItem)
     }
 
+    @objc func playerItemDidReachEnd(notification: Notification) {
+        guard let playerItem = notification.object as? AVPlayerItem else { return }
+        playerItem.seek(to: .zero, completionHandler: nil)
+    }
+    
     @IBAction func dayButtonPressed(_ sender: Any) {
     }
     
