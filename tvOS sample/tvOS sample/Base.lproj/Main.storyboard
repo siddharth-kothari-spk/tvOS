@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--FirstViewController-->
+        <!--LocationViewController-->
         <scene sceneID="Mt4-Dr-pu1">
             <objects>
-                <viewController storyboardIdentifier="FirstViewController" title="FirstViewController" id="sa6-7F-z7x" customClass="FirstViewController" customModule="tvOS_sample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LocationViewController" title="LocationViewController" id="sa6-7F-z7x" customClass="LocationViewController" customModule="tvOS_sample" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fqv-fi-y4L"/>
                         <viewControllerLayoutGuide type="bottom" id="dy3-1i-1N0"/>
@@ -59,7 +59,7 @@
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30 °C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ci-qO-hAW">
-                                            <rect key="frame" x="81" y="54" width="531" height="239"/>
+                                            <rect key="frame" x="81" y="54" width="440" height="239"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="239" id="Vhk-ic-CiC"/>
                                                 <constraint firstAttribute="width" constant="440" id="bz5-hi-T4T"/>
@@ -77,23 +77,23 @@
                                             <state key="normal" title="Button"/>
                                             <buttonConfiguration key="configuration" style="plain" title="Thursday"/>
                                         </button>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="clear-day" translatesAutoresizingMaskIntoConstraints="NO" id="xI5-w6-04T">
-                                            <rect key="frame" x="670" y="149" width="120" height="120"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clear-day" translatesAutoresizingMaskIntoConstraints="NO" id="xI5-w6-04T">
+                                            <rect key="frame" x="612" y="149" width="120" height="120"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="120" id="1rN-5f-eDe"/>
                                                 <constraint firstAttribute="width" constant="120" id="qDL-zm-dJS"/>
                                             </constraints>
                                         </imageView>
-                                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LNM-oT-E0X">
-                                            <rect key="frame" x="840" y="114" width="4" height="190"/>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LNM-oT-E0X">
+                                            <rect key="frame" x="782" y="114" width="4" height="190"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="190" id="1Ho-lw-Xpf"/>
                                                 <constraint firstAttribute="width" constant="4" id="MlI-0N-OEv"/>
                                             </constraints>
                                         </view>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Clear throughout the day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kPc-es-kFg">
-                                            <rect key="frame" x="902" y="186" width="416" height="46"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clear throughout the day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kPc-es-kFg">
+                                            <rect key="frame" x="844" y="186" width="416" height="46"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="416" id="Rpl-a2-7te"/>
                                                 <constraint firstAttribute="height" constant="46" id="dei-2B-v5n"/>
@@ -147,10 +147,10 @@
             </objects>
             <point key="canvasLocation" x="245" y="-2160"/>
         </scene>
-        <!--View Controller-->
+        <!--DetailViewController-->
         <scene sceneID="TPX-X0-Lc4">
             <objects>
-                <viewController id="T5c-Y2-RMu" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailViewController" title="DetailViewController" id="T5c-Y2-RMu" customClass="DetailViewController" customModule="tvOS_sample" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FRn-cB-1d8"/>
                         <viewControllerLayoutGuide type="bottom" id="k54-FK-hGV"/>
@@ -188,7 +188,7 @@
         <!--City Search-->
         <scene sceneID="OCx-IC-2bN">
             <objects>
-                <tableViewController title="City Search" clearsSelectionOnViewWillAppear="NO" id="CW8-lX-pkX" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="SearchTableViewController" title="City Search" clearsSelectionOnViewWillAppear="NO" id="CW8-lX-pkX" customClass="SearchTableViewController" customModule="tvOS_sample" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" sectionHeaderHeight="66" sectionFooterHeight="66" id="jcY-2e-l4d">
                         <rect key="frame" x="0.0" y="0.0" width="634" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  LocationViewController.swift
 //  tvOS sample
 //
 //  Created by Siddharth Kothari on 20/07/23.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class LocationViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
