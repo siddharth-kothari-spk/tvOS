@@ -71,6 +71,7 @@
                         <viewLayoutGuide key="safeArea" id="pCk-ag-wsb"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="Ga2-sm-0de"/>
+                    <nil key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cVR-jn-wOk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
