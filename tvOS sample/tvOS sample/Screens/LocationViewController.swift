@@ -33,6 +33,7 @@ class LocationViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         initVideoBackground()
+        setupLocationServices()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -93,4 +94,24 @@ class LocationViewController: UIViewController {
 // MARK: - Location Manager delegate
 extension LocationViewController: CLLocationManagerDelegate {
     
+    // MARK: - handle error
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print(error.localizedDescription)
+    }
+    
+    //MARK: - handle authorization changes
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        if status == .authorizedWhenInUse {
+            manager.requestLocation()
+        }
+    }
+    
+    func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
+
+    }
+    
+    // MARK: - handle location update
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        
+    }
 }

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "DB74CB39-EEC2-47EF-A81C-51837A6AB5D1"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6DA616BB-4BFC-462C-8ADC-8FC08942C2E0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "tvOS sample/Screens/LocationViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
+            landmarkName = "setupLocationServices()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6DA616BB-4BFC-462C-8ADC-8FC08942C2E0 - a8d688d69ee328b9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "tvOS_sample.LocationViewController.setupLocationServices() -&gt; ()"
+                  moduleName = "tvOS sample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/siddharthkothari/Documents/TestProjects/Learn/tvOS/tvOS%20sample/tvOS%20sample/Screens/LocationViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "81"
+                  endingLineNumber = "81"
+                  offsetFromSymbolStart = "124">
+               </Location>
+               <Location
+                  uuid = "6DA616BB-4BFC-462C-8ADC-8FC08942C2E0 - a8d688d69ee32858"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "tvOS_sample.LocationViewController.setupLocationServices() -&gt; ()"
+                  moduleName = "tvOS sample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/siddharthkothari/Documents/TestProjects/Learn/tvOS/tvOS%20sample/tvOS%20sample/Screens/LocationViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82"
+                  offsetFromSymbolStart = "32">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
