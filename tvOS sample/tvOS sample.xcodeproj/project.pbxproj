@@ -15,6 +15,11 @@
 		B1C8C7D62A67E7D800A30F81 /* tvOS_sampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C8C7D52A67E7D800A30F81 /* tvOS_sampleUITests.swift */; };
 		B1C8C7D82A67E7D800A30F81 /* tvOS_sampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C8C7D72A67E7D800A30F81 /* tvOS_sampleUITestsLaunchTests.swift */; };
 		B1C8C7E52A68D97D00A30F81 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C8C7E42A68D97D00A30F81 /* FirstViewController.swift */; };
+		B1C8C7EE2A69060600A30F81 /* sun.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B1C8C7E92A69060600A30F81 /* sun.mp4 */; };
+		B1C8C7EF2A69060600A30F81 /* cloudy.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B1C8C7EA2A69060600A30F81 /* cloudy.mp4 */; };
+		B1C8C7F02A69060600A30F81 /* snow.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B1C8C7EB2A69060600A30F81 /* snow.mp4 */; };
+		B1C8C7F12A69060600A30F81 /* storm.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B1C8C7EC2A69060600A30F81 /* storm.mp4 */; };
+		B1C8C7F22A69060600A30F81 /* rain.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B1C8C7ED2A69060600A30F81 /* rain.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +51,11 @@
 		B1C8C7D52A67E7D800A30F81 /* tvOS_sampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tvOS_sampleUITests.swift; sourceTree = "<group>"; };
 		B1C8C7D72A67E7D800A30F81 /* tvOS_sampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tvOS_sampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B1C8C7E42A68D97D00A30F81 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		B1C8C7E92A69060600A30F81 /* sun.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sun.mp4; sourceTree = "<group>"; };
+		B1C8C7EA2A69060600A30F81 /* cloudy.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = cloudy.mp4; sourceTree = "<group>"; };
+		B1C8C7EB2A69060600A30F81 /* snow.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = snow.mp4; sourceTree = "<group>"; };
+		B1C8C7EC2A69060600A30F81 /* storm.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = storm.mp4; sourceTree = "<group>"; };
+		B1C8C7ED2A69060600A30F81 /* rain.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = rain.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +106,7 @@
 		B1C8C7B62A67E7D600A30F81 /* tvOS sample */ = {
 			isa = PBXGroup;
 			children = (
+				B1C8C7E82A6905E900A30F81 /* videos */,
 				B1C8C7B72A67E7D600A30F81 /* AppDelegate.swift */,
 				B1C8C7E42A68D97D00A30F81 /* FirstViewController.swift */,
 				B1C8C7BB2A67E7D600A30F81 /* Main.storyboard */,
@@ -120,6 +131,18 @@
 				B1C8C7D72A67E7D800A30F81 /* tvOS_sampleUITestsLaunchTests.swift */,
 			);
 			path = "tvOS sampleUITests";
+			sourceTree = "<group>";
+		};
+		B1C8C7E82A6905E900A30F81 /* videos */ = {
+			isa = PBXGroup;
+			children = (
+				B1C8C7EA2A69060600A30F81 /* cloudy.mp4 */,
+				B1C8C7ED2A69060600A30F81 /* rain.mp4 */,
+				B1C8C7EB2A69060600A30F81 /* snow.mp4 */,
+				B1C8C7EC2A69060600A30F81 /* storm.mp4 */,
+				B1C8C7E92A69060600A30F81 /* sun.mp4 */,
+			);
+			path = videos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,8 +249,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1C8C7EE2A69060600A30F81 /* sun.mp4 in Resources */,
+				B1C8C7F22A69060600A30F81 /* rain.mp4 in Resources */,
 				B1C8C7C22A67E7D700A30F81 /* LaunchScreen.storyboard in Resources */,
 				B1C8C7BF2A67E7D700A30F81 /* Assets.xcassets in Resources */,
+				B1C8C7EF2A69060600A30F81 /* cloudy.mp4 in Resources */,
+				B1C8C7F02A69060600A30F81 /* snow.mp4 in Resources */,
+				B1C8C7F12A69060600A30F81 /* storm.mp4 in Resources */,
 				B1C8C7BD2A67E7D600A30F81 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
