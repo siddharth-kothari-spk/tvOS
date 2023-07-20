@@ -165,16 +165,28 @@
             </objects>
             <point key="canvasLocation" x="7093" y="242"/>
         </scene>
-        <!--Root View Controller-->
+        <!--City Search-->
         <scene sceneID="OCx-IC-2bN">
             <objects>
                 <tableViewController clearsSelectionOnViewWillAppear="NO" id="CW8-lX-pkX" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" sectionHeaderHeight="66" sectionFooterHeight="66" id="jcY-2e-l4d">
                         <rect key="frame" x="0.0" y="0.0" width="634" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="5ZD-9A-UIe">
+                            <rect key="frame" x="0.0" y="0.0" width="634" height="96"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter city name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hXx-r8-6L5">
+                                    <rect key="frame" x="88" y="25" width="480" height="47"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                        </view>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="nTT-6o-y1Z">
-                                <rect key="frame" x="80" y="66" width="509" height="66"/>
+                                <rect key="frame" x="80" y="162" width="509" height="66"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nTT-6o-y1Z" id="GGo-cJ-Lfj">
                                     <rect key="frame" x="0.0" y="0.0" width="509" height="66"/>
@@ -190,7 +202,7 @@
                             <outlet property="delegate" destination="CW8-lX-pkX" id="QNy-X2-ZXz"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="Mwk-l9-Rra"/>
+                    <navigationItem key="navigationItem" title="City Search" id="Mwk-l9-Rra"/>
                     <connections>
                         <outlet property="tabBarObservedScrollView" destination="jcY-2e-l4d" id="q6O-Hw-tR7"/>
                     </connections>
