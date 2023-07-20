@@ -64,7 +64,7 @@
                                                 <constraint firstAttribute="height" constant="239" id="Vhk-ic-CiC"/>
                                                 <constraint firstAttribute="width" constant="440" id="bz5-hi-T4T"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="200"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="120"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -299,7 +299,7 @@
     <resources>
         <image name="clear-day" width="490" height="490"/>
         <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
