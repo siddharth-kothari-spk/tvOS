@@ -22,6 +22,7 @@
 		B1C8C7F52A6945F900A30F81 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C8C7F42A6945F900A30F81 /* LocationViewController.swift */; };
 		B1C8C7F72A69467300A30F81 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C8C7F62A69467300A30F81 /* SearchTableViewController.swift */; };
 		B1C8C7F92A6946AE00A30F81 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C8C7F82A6946AE00A30F81 /* DetailViewController.swift */; };
+		B1C8C7FB2A6949C100A30F81 /* Helper in Resources */ = {isa = PBXBuildFile; fileRef = B1C8C7FA2A6949C100A30F81 /* Helper */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		B1C8C7F42A6945F900A30F81 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		B1C8C7F62A69467300A30F81 /* SearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
 		B1C8C7F82A6946AE00A30F81 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		B1C8C7FA2A6949C100A30F81 /* Helper */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Helper; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,8 +113,9 @@
 			isa = PBXGroup;
 			children = (
 				B1C8C7E82A6905E900A30F81 /* videos */,
-				B1C8C7B72A67E7D600A30F81 /* AppDelegate.swift */,
 				B1C8C7F32A6945E300A30F81 /* Screens */,
+				B1C8C7FA2A6949C100A30F81 /* Helper */,
+				B1C8C7B72A67E7D600A30F81 /* AppDelegate.swift */,
 				B1C8C7BB2A67E7D600A30F81 /* Main.storyboard */,
 				B1C8C7BE2A67E7D700A30F81 /* Assets.xcassets */,
 				B1C8C7C02A67E7D700A30F81 /* LaunchScreen.storyboard */,
@@ -268,6 +271,7 @@
 				B1C8C7C22A67E7D700A30F81 /* LaunchScreen.storyboard in Resources */,
 				B1C8C7BF2A67E7D700A30F81 /* Assets.xcassets in Resources */,
 				B1C8C7EF2A69060600A30F81 /* cloudy.mp4 in Resources */,
+				B1C8C7FB2A6949C100A30F81 /* Helper in Resources */,
 				B1C8C7F02A69060600A30F81 /* snow.mp4 in Resources */,
 				B1C8C7F12A69060600A30F81 /* storm.mp4 in Resources */,
 				B1C8C7BD2A67E7D600A30F81 /* Main.storyboard in Resources */,
