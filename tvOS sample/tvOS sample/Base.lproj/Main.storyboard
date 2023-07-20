@@ -140,7 +140,7 @@
                             <constraint firstAttribute="bottom" secondItem="PSP-dy-4tQ" secondAttribute="bottom" id="oIB-py-Fh6"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="Ga2-sm-0de"/>
+                    <tabBarItem key="tabBarItem" title="Your Location" id="Ga2-sm-0de"/>
                     <nil key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cVR-jn-wOk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -215,11 +215,11 @@
             </objects>
             <point key="canvasLocation" x="2455" y="242"/>
         </scene>
-        <!--Item-->
+        <!--City Search-->
         <scene sceneID="AeG-kf-OfH">
             <objects>
                 <splitViewController allowDoubleColumnStyle="YES" id="gdO-kA-6Kg" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="xra-lT-RQp"/>
+                    <tabBarItem key="tabBarItem" title="City Search" id="xra-lT-RQp"/>
                     <connections>
                         <segue destination="2P8-mf-pao" kind="relationship" relationship="masterViewController" id="U86-BB-GFH"/>
                     </connections>
