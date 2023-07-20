@@ -9,13 +9,21 @@ import UIKit
 
 class LocationViewController: UIViewController {
 
+    @IBOutlet weak var locationLabel: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var temperatureLabel: UILabel!
+    @IBOutlet weak var dayButton: UIButton!
+    @IBOutlet weak var weatherImageView: UIImageView!
+    @IBOutlet weak var weatherDescriptionLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func dayButtonPressed(_ sender: Any) {
+    }
+    
     /*
     // MARK: - Navigation
 

@@ -9,6 +9,9 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
+    @IBOutlet weak var summaryLabel: UILabel!
+    @IBOutlet weak var temperatureLabel: UILabel!
+    @IBOutlet weak var weatherImageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
 

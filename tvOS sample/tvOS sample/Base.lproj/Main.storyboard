@@ -76,6 +76,9 @@
                                             <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                             <state key="normal" title="Button"/>
                                             <buttonConfiguration key="configuration" style="plain" title="Thursday"/>
+                                            <connections>
+                                                <action selector="dayButtonPressed:" destination="sa6-7F-z7x" eventType="primaryActionTriggered" id="wES-Ru-0wt"/>
+                                            </connections>
                                         </button>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clear-day" translatesAutoresizingMaskIntoConstraints="NO" id="xI5-w6-04T">
                                             <rect key="frame" x="612" y="149" width="120" height="120"/>
@@ -142,6 +145,14 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Your Location" id="Ga2-sm-0de"/>
                     <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="dateLabel" destination="H9D-8S-DlF" id="Mwa-P4-bhk"/>
+                        <outlet property="dayButton" destination="YTf-ng-4fc" id="8mv-Ea-Bwo"/>
+                        <outlet property="locationLabel" destination="Mh8-c8-Beu" id="LWW-CW-7xi"/>
+                        <outlet property="temperatureLabel" destination="9Ci-qO-hAW" id="d7s-lB-1U2"/>
+                        <outlet property="weatherDescriptionLabel" destination="kPc-es-kFg" id="dPf-WL-1QV"/>
+                        <outlet property="weatherImageView" destination="xI5-w6-04T" id="Zqt-FL-t9s"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cVR-jn-wOk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -180,6 +191,11 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3aJ-1b-od2"/>
                     </view>
+                    <connections>
+                        <outlet property="summaryLabel" destination="sFv-AD-xl6" id="NFP-hR-qEn"/>
+                        <outlet property="temperatureLabel" destination="xVE-sU-Zv6" id="QVB-so-eiY"/>
+                        <outlet property="weatherImageView" destination="PFN-qi-n0m" id="sD7-vG-WlO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="miW-Gd-feh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -224,6 +240,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="City Search" id="Mwk-l9-Rra"/>
                     <connections>
+                        <outlet property="searchTextField" destination="hXx-r8-6L5" id="t4p-eM-ib8"/>
                         <outlet property="tabBarObservedScrollView" destination="jcY-2e-l4d" id="q6O-Hw-tR7"/>
                     </connections>
                 </tableViewController>
