@@ -24,10 +24,21 @@ class LocationViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        initVideoBackground()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        avPlayer.play()
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        avPlayer.pause()
     }
     
     func initVideoBackground() {
-        avPlayer = AVPlayer(playerItem: nil)
+        avPlayer = AVPlayer(playerItem: preparePlayerItem(withIcon: Icon.sun))
         avPlayerLayer = AVPlayerLayer(player: avPlayer)
         avPlayerLayer.videoGravity = .resizeAspectFill
         avPlayerLayer.frame = view.layer.bounds
@@ -41,6 +52,10 @@ class LocationViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(playerItemDidReachEnd(notification:)), name: AVPlayerItem.didPlayToEndTimeNotification, object: avPlayer.currentItem)
     }
 
+    func preparePlayerItem(withIcon icon:Icon) -> AVPlayerItem {
+        return AVPlayerItem(url: Bundle.main.url(forResource: icon.rawValue, withExtension: "mp4")!)
+    }
+    
     @objc func playerItemDidReachEnd(notification: Notification) {
         guard let playerItem = notification.object as? AVPlayerItem else { return }
         playerItem.seek(to: .zero, completionHandler: nil)
