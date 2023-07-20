@@ -7,9 +7,11 @@
 
 import UIKit
 import AVFoundation
+import CoreLocation
 
 class LocationViewController: UIViewController {
 
+    // MARK: - Outlets
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var temperatureLabel: UILabel!
@@ -17,9 +19,15 @@ class LocationViewController: UIViewController {
     @IBOutlet weak var weatherImageView: UIImageView!
     @IBOutlet weak var weatherDescriptionLabel: UILabel!
     
+    // MARK: - Video background properties
     var avPlayer: AVPlayer!
     var avPlayerLayer: AVPlayerLayer!
     
+    // MARK: - Location properties
+    var locationManager = CLLocationManager()
+    var currentLocation: CLLocation?
+    
+    // MARK: - Viewcontroller Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -37,6 +45,7 @@ class LocationViewController: UIViewController {
         avPlayer.pause()
     }
     
+    // MARK: - video player methods
     func initVideoBackground() {
         avPlayer = AVPlayer(playerItem: preparePlayerItem(withIcon: Icon.sun))
         avPlayerLayer = AVPlayerLayer(player: avPlayer)
@@ -61,17 +70,27 @@ class LocationViewController: UIViewController {
         playerItem.seek(to: .zero, completionHandler: nil)
     }
     
-    @IBAction func dayButtonPressed(_ sender: Any) {
-    }
+    // MARK: - Location Services
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func setupLocationServices() {
+        if CLLocationManager.locationServicesEnabled() {
+            locationManager.delegate = self
+        }
+        
+        switch CLLocationManager.authorizationStatus() {
+        case .authorizedWhenInUse:
+            locationManager.requestLocation()
+        default:
+            locationManager.requestWhenInUseAuthorization()
+        }
     }
-    */
+    // MARK: - UI Interactions
+    @IBAction func dayButtonPressed(_ sender: Any) {
+        
+    }
+}
 
+// MARK: - Location Manager delegate
+extension LocationViewController: CLLocationManagerDelegate {
+    
 }
