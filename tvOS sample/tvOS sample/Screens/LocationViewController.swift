@@ -112,6 +112,20 @@ extension LocationViewController: CLLocationManagerDelegate {
     
     // MARK: - handle location update
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        manager.stopUpdatingLocation()
         
+        if let locationObject = locations.first {
+            currentLocation = locationObject
+            
+            let geoCoder = CLGeocoder()
+            geoCoder.reverseGeocodeLocation(locationObject) { placemarks, error in
+                if error == nil {}
+                guard let cityName = placemarks?.first?.locality else { return }
+                
+                DispatchQueue.main.async {
+                    self.locationLabel.text = cityName
+                }
+            }
+        }
     }
 }
