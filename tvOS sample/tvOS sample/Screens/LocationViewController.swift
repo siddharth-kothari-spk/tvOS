@@ -59,7 +59,7 @@ class LocationViewController: UIViewController {
         view.backgroundColor = .clear
         view.layer.insertSublayer(avPlayerLayer, at: 0)
         
-        NotificationCenter.default.addObserver(self, selector: #selector(playerItemDidReachEnd(notification:)), name: AVPlayerItem.didPlayToEndTimeNotification, object: avPlayer.currentItem)
+        NotificationCenter.default.addObserver(self, selector: #selector(playerItemDidReachEnd(notification:)), name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: avPlayer.currentItem)
     }
 
     func preparePlayerItem(withIcon icon:Icon) -> AVPlayerItem {
